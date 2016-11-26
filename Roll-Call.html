@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>点名系统</title>
+    <link rel="stylesheet" href="./Roll-Call.css">
+</head>
+<body>
+<div class="lottery">
+    <div class="page welcome">
+        <h1>点名系统</h1>
+        <a class="btn btn-bg start">开始</a>
+        <a class="btn btn-bg setting">设置</a>
+        <a class="btn btn-bg exit">退出</a>
+        <div class="dialog hidden">
+            <h2>设置</h2>
+            <input type="text" value="50" class="ipt-txt iptSum">
+            <input type="text" placeholder="历史记录" class="ipt-txt iptHistory">
+            <a class="btn btn-bd sure">确定</a>
+        </div>
+    </div>
+    <div class="page loading hidden">
+        <p class="loading-text">0</p>
+        <div class="frame">
+            <div class="progress"></div>
+        </div>
+    </div>
+    <div class="page main hidden">
+        <div class="header">
+            <a class="btn btn-bg back">返回</a>
+        </div>
+        <div class="footer">
+            <a class="btn btn-bg startMain">开始</a>
+            <input type="text" class="ipt-txt iptCongratulate">
+            <a class="btn btn-bg congratulate">恭喜</a>
+            <input type="text" class="ipt-txt iptRegret">
+            <a class="btn btn-bg regret">遗憾</a>
+        </div>
+    </div>
+</div>
+<script src="./Roll-Call.js"></script>
+</body>
+</html>
